@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Font Awesome Link -->
+        <script src="https://kit.fontawesome.com/413d010aec.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@500&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>        
+        <div class="container"> 
+            <div class="wrapper">
+                <div class="info-box">
+                    <div class="info-content">
+                        <h1 class="title">The <span class="line-break">Dog Age - Human Age</span> Converter</h1>
+                        <img src="img/dogs-and-owner.png" alt="two dogs with their owner in front of city skyline backdrop">
+                        <p><a href="https://www.freepik.com/vectors/abstract">Illustration created by vectorjuice - www.freepik.com</a></p>
+                    </div>
+                </div>
+                <div class="convert-container">
+                    <div class="container-wrapper">
+                        <h2 class="convert-note">Use this tool to <span class="wavy-line">easily</span> convert between human & dog age units</h2>
+                        <div class="convert-box convert-box-left">
+                            <label for="unit-1-value"></label>
+                            <input type="number" id="unit-1-value" placeholder="Enter number"></input>
+                            <select name="convert-1" id="convert-1">
+                                <option value="human-years">Human Years</option>
+                                <option value="dog-years">Dog Years</option>
+                                <option value="dog-months">Dog Months</option>
+                                <option value="dog-weeks">Dog Weeks</option>
+                                <option value="dog-days">Dog Days</option>
+                                
+                            </select>
+                        </div><!-- close convert-box-left -->
+                        <div class="equal-icon">
+                            <i class="fas fa-equals" alt="equals"></i>
+                        </div>
+                        <div class="convert-box convert-box-right">
+                            <label for="unit-2-value"></label>
+                            <input type="number" id="unit-2-value" placeholder="Enter number"></input>
+                            <select name="convert-2" id="convert-2">
+                                <option value="dog-years">Dog Years</option>
+                                <option value="dog-months">Dog Months</option>
+                                <option value="dog-weeks">Dog Weeks</option>
+                                <option value="dog-days">Dog Days</option>
+                                <option value="human-years">Human Years</option>       
+                            </select>
+                        </div><!-- close convert-box-right -->
+                        <p class="note"><strong>*Conversion factor:</strong> 1 dog year is approximately equal to 10.5 human years</p>
+                        <p class="credit">{ Created by <a href="https://twitter.com/maelingcodes">@maelingcodes }</a></p>
+                    </div><!-- close container-wrapper -->
+                    
+                </div><!-- close convert-container -->  
+               
+            </div>  
+            
+        </div><!-- close container --> 
+        
+        <script src="index.js"></script>    
+    </body>
+</html>
