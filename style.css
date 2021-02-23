@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background: hsla(331, 98%, 67%, 1); */
+  background: linear-gradient(45deg, hsla(331, 98%, 67%, 1) 0%, hsla(5, 95%, 71%, 1) 100%);
+  background: -moz-linear-gradient(45deg, hsla(331, 98%, 67%, 1) 0%, hsla(5, 95%, 71%, 1) 100%);
+  background: -webkit-linear-gradient(45deg, hsla(331, 98%, 67%, 1) 0%, hsla(5, 95%, 71%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FD5AA9", endColorstr="#FB7B70", GradientType=1 );
+}
+
+h1 {
+  font-family: "Barlow", sans-serif;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+p {
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: #58265A;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;  
+
+}
+
+
+.wrapper {
+  display: flex;
+  margin: 50px 30px;
+  box-shadow: 8px 8px 5px 1px rgba(0, 0, 0, .2);
+}
+
+.info-content, .equal-icon, .note, .convert-note, .credit {
+  text-align: center;
+}
+
+.note {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.info-content, .container-wrapper {
+  padding: 50px;
+}
+
+.info-content {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 250px;
+  margin: 30px 0;
+}
+
+.line-break {
+  display: block;
+}
+
+.info-box {
+  flex: 1;
+  background-color: #edd4ed;
+  display: flex;
+  align-items: center;
+}
+
+.convert-container {
+  max-width: 600px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.convert-box {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.wavy-line {
+  border-bottom: 3px  solid #FB7B70;
+}
+
+input {
+    width: 100%;
+    padding: 16px 20px;
+    outline: none;
+    border: 2px solid #333;
+}
+
+input:focus {
+  border-bottom: 4px solid #58265A;
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
+select:focus {
+  border: 2px solid #58265A;
+}
+
+.fa-equals {
+  font-size: 30px;
+}
+
+/* TODO- Media Queries */
+@media only screen and (max-width: 750px) {
+  .wrapper {
+    display: block;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  img {
+    max-width: 150px;
+  }
+}
+
+/* Remove number input arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
