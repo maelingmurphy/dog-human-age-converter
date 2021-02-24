@@ -3,11 +3,11 @@ body {
   padding: 0;
   display: flex;
   align-items: center;
-  background: hsla(331, 98%, 67%, 1); */
-  background: linear-gradient(45deg, hsla(331, 98%, 67%, 1) 0%, hsla(5, 95%, 71%, 1) 100%);
-  background: -moz-linear-gradient(45deg, hsla(331, 98%, 67%, 1) 0%, hsla(5, 95%, 71%, 1) 100%);
-  background: -webkit-linear-gradient(45deg, hsla(331, 98%, 67%, 1) 0%, hsla(5, 95%, 71%, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FD5AA9", endColorstr="#FB7B70", GradientType=1 );
+  background: hsla(299, 38%, 26%, 1);
+  background: linear-gradient(45deg, hsla(299, 38%, 26%, 1) 16%, hsla(332, 49%, 45%, 1) 100%);
+  background: -moz-linear-gradient(45deg, hsla(299, 38%, 26%, 1) 16%, hsla(332, 49%, 45%, 1) 100%);
+  background: -webkit-linear-gradient(45deg, hsla(299, 38%, 26%, 1) 16%, hsla(332, 49%, 45%, 1) 100%); 
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5C2A5D", endColorstr="#AB3A6E", GradientType=1 );
 }
 
 h1 {
@@ -78,7 +78,6 @@ img {
 }
 
 .convert-container {
-  max-width: 600px;
   margin: 0 auto;
   flex: 1;
   display: flex;
@@ -126,16 +125,21 @@ select:focus {
 
 /* TODO- Media Queries */
 @media only screen and (max-width: 750px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+  }
   .wrapper {
     display: block;
+    margin: 0;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   img {
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 
